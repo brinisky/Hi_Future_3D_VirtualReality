@@ -1,0 +1,46 @@
+{
+  "checkedAt": "2026-11-08T09:18:44.063Z",
+  "checks": [
+    {
+      "label": "三种服务均可选择",
+      "passed": true
+    },
+    {
+      "label": "切换 DeepSeek 不复用 Kimi Key",
+      "passed": true
+    },
+    {
+      "label": "DeepSeek Key 保存且不回显",
+      "passed": true
+    },
+    {
+      "label": "重启恢复 DeepSeek 配置",
+      "passed": true
+    },
+    {
+      "label": "官方地址、独立认证与 deepseek-flash 模型 ID",
+      "passed": true
+    },
+    {
+      "label": "语音对话使用非思考模式，无 Kimi 专用参数",
+      "passed": true
+    },
+    {
+      "label": "回复与游戏动作兼容且不输出思考内容",
+      "passed": true
+    },
+    {
+      "label": "DeepSeek 错误标签准确",
+      "passed": true
+    },
+    {
+      "label": "原 Kimi Coding 路由和参数不变",
+      "passed": true
+    },
+    {
+      "label": "Kimi 开放平台仍可使用",
+      "passed": true
+    }
+  ],
+  "scope": "Fake keys and mocked upstream only. Existing live Kimi service was not accessed or changed."
+}

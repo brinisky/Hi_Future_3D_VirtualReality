@@ -1,0 +1,22 @@
+#settings-dialog{width:570px;scrollbar-width:thin;scrollbar-color:#45616b transparent}
+.setting-section{border-top:1px solid var(--line);padding-top:17px;margin-top:21px}
+.setting-section h3{font-size:14px;color:var(--accent);font-weight:500;margin:0 0 17px}
+dialog input[type=password],dialog input[type=text]{display:block;background:#0b1b24;border:1px solid var(--line);color:var(--ink);padding:11px;width:100%;margin-top:9px;border-radius:7px;outline:0}
+dialog input[type=range]{display:block;width:100%;margin-top:12px;accent-color:var(--accent)}
+.setting-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.setting-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.setting-actions button{padding:9px 13px;font-size:11px}
+.setting-actions #save-kimi{color:#143730;background:var(--accent)}
+#kimi-status{border:1px solid var(--line);padding:12px;border-radius:8px;color:#c5e2df;background:#091922;min-height:44px;overflow-wrap:anywhere}
+.subtle{display:block;color:var(--muted);font-size:10px;line-height:1.7}
+.voice-controls{display:flex;gap:6px;flex-wrap:wrap;margin:11px 17px 0}
+.voice-controls button{font-size:9px;padding:6px 8px}
+.voice-controls button.active{background:#8ce7d725;border-color:var(--accent);color:var(--accent)}
+#voice-rate-value{float:right;color:var(--accent)}
+.chat-footer{margin-top:9px}
+.voice-recovery{margin:8px 17px;padding:10px;border:1px solid #a7845570;border-radius:8px;background:#372d2170;color:#ead7b9;font-size:11px;line-height:1.65;max-height:170px;overflow:auto}
+.voice-recovery p{margin:0 0 8px;overflow-wrap:anywhere}
+.voice-recovery>div{display:flex;gap:6px;flex-wrap:wrap}
+.voice-recovery button{padding:6px 8px;font-size:10px}
+.voice-recovery #voice-retry{color:var(--accent)}
+@media(max-width:720px){.voice-controls{margin-top:6px}.voice-controls button{padding:4px 6px}.setting-grid{grid-template-columns:1fr}}

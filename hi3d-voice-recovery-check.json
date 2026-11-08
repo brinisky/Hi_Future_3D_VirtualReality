@@ -1,0 +1,415 @@
+{
+  "checkedAt": "2026-11-08T10:15:22.195Z",
+  "seconds": 37.368,
+  "checks": [
+    {
+      "label": "无已安装本机包时使用浏览器服务，不假装已支持离线",
+      "passed": true
+    },
+    {
+      "label": "瞬时网络失败保留连续会话意图并释放旧会话",
+      "passed": true
+    },
+    {
+      "label": "缺失 onend 也能重连，任意时刻最多一个识别会话",
+      "passed": true
+    },
+    {
+      "label": "重连成功明确提示重新说，不声称恢复未录下的音频",
+      "passed": true
+    },
+    {
+      "label": "迟到的旧会话结束事件不关闭新麦克风",
+      "passed": true
+    },
+    {
+      "label": "恢复后语音只提交一次，并继续驱动 AI 演示和语音回复",
+      "passed": true
+    },
+    {
+      "label": "播报完成后连续语音继续聆听",
+      "passed": true
+    },
+    {
+      "label": "连续失败最多两次自动重连，达到上限后停止",
+      "passed": true
+    },
+    {
+      "label": "持续失败提供可操作的重试与文字入口，区分识别服务与 AI Key",
+      "passed": true
+    },
+    {
+      "label": "点击重试可以重新建立语音会话",
+      "passed": true
+    },
+    {
+      "label": "断线时保留已识别草稿，不自动发送片段或重新覆盖",
+      "passed": true
+    },
+    {
+      "label": "语音草稿不覆盖已有文字输入",
+      "passed": true
+    },
+    {
+      "label": "用户可主动合并已识别文字",
+      "passed": true
+    },
+    {
+      "label": "权限拒绝立即停止，不循环请求权限",
+      "passed": true
+    },
+    {
+      "label": "设备错误显示准确说明且不自动重试",
+      "passed": true
+    },
+    {
+      "label": "取消重连后不会意外重新打开麦克风",
+      "passed": true
+    },
+    {
+      "label": "按住 V 时断线，松开 V 取消待执行重连",
+      "passed": true
+    },
+    {
+      "label": "麦克风尚未启动就松开按键，也能清理会话",
+      "passed": true
+    },
+    {
+      "label": "播报开始时取消识别重连，避免收录助手声音",
+      "passed": true
+    },
+    {
+      "label": "离线时暂停启动麦克风并提供取消入口",
+      "passed": true
+    },
+    {
+      "label": "网络恢复后仅恢复仍获授权的识别会话",
+      "passed": true
+    },
+    {
+      "label": "离线等待被取消后，联网事件不会重开麦克风",
+      "passed": true
+    },
+    {
+      "label": "离开窗口取消待重连会话",
+      "passed": true
+    },
+    {
+      "label": "服务没有启动回调时，超时清理并恢复可重试状态",
+      "passed": true
+    },
+    {
+      "label": "停止识别缺失 onend 时，已确认文本仍只提交一次",
+      "passed": true
+    },
+    {
+      "label": "连续静音最多再聆听一次，不无限循环",
+      "passed": true
+    },
+    {
+      "label": "识别模式偏好可保存",
+      "passed": true
+    },
+    {
+      "label": "语音修复后游戏仍可加载并使用远景资源",
+      "passed": true
+    },
+    {
+      "label": "配置与故障说明可下载",
+      "passed": true
+    },
+    {
+      "label": "已有中文本机识别时自动优先使用",
+      "passed": true
+    },
+    {
+      "label": "本机已安装识别不被浏览器离线标记阻止",
+      "passed": true
+    },
+    {
+      "label": "本机能力失效时有限回退到浏览器识别",
+      "passed": true
+    },
+    {
+      "label": "不自动安装或下载语音模型",
+      "passed": true
+    },
+    {
+      "label": "浏览器无识别 API 时仍能使用文字并获得明确说明",
+      "passed": true
+    },
+    {
+      "label": "最终页面冷缓存实际使用：hi3d-lab-architecture.glb",
+      "passed": true
+    },
+    {
+      "label": "最终页面冷缓存实际使用：hi3d-console-near.glb",
+      "passed": true
+    },
+    {
+      "label": "最终页面冷缓存实际使用：hi3d-assistant-walk-near.glb",
+      "passed": true
+    },
+    {
+      "label": "最终页面冷缓存实际使用：hi3d-console-far.glb",
+      "passed": true
+    },
+    {
+      "label": "最终页面冷缓存实际使用：hi3d-assistant-walk-far.glb",
+      "passed": true
+    },
+    {
+      "label": "本地资源及脚本无加载错误",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "requests": [
+    {
+      "path": "/hi3d-index.html",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-style.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-settings.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-game.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/environments/RoomEnvironment.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-dialogue.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three-mesh-bvh/build/index.module.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-voice.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-kimi-client.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-companion.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-lab-details.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-follow.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/build/three.module.js",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-lab-architecture.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-console-near.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-assistant-walk-near.glb",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-assistant-walk-far.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-console-far.glb",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-index.html",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-style.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-settings.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-game.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/environments/RoomEnvironment.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-dialogue.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-voice.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three-mesh-bvh/build/index.module.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-kimi-client.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-companion.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-lab-details.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-follow.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/build/three.module.js",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-lab-architecture.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-console-near.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-assistant-walk-near.glb",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-index.html",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-style.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-settings.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-game.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/environments/RoomEnvironment.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-dialogue.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three-mesh-bvh/build/index.module.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-voice.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-kimi-client.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-companion.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-lab-details.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-follow.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/build/three.module.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-lab-architecture.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-console-near.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-assistant-walk-near.glb",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "scope": "Final HTML over local HTTP, fresh caches, remote resources blocked. Recognition, native availability, network and synthesis events are injected fault scenarios; no real microphone, cloud ASR success, offline model accuracy or real AI account tested. Existing AI server processes/configuration unchanged."
+}

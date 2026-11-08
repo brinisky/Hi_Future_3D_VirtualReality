@@ -1,0 +1,96 @@
+{
+  "seconds": 11.989660874998663,
+  "fps": 24,
+  "cycle_seconds": 1,
+  "nominal_speed_m_s": {
+    "forward": 0.68,
+    "sideways": 0.36
+  },
+  "scope": "Four short stepping cycles; preserved original mesh, UV, materials, facial morphs and five upper-body idles. Weight changes restricted to legs below 0.70 m; the long skirt pleats remain bound to the pelvis. Numerical checks do not certify continuous cloth collision.",
+  "lods": [
+    {
+      "lod": "near",
+      "source": "exports/ai-lab-v4/assets/hi3d-assistant-near.glb",
+      "output": "exports/ai-lab-v4/assets/hi3d-assistant-walk-near.glb",
+      "vertices": 214491,
+      "faces": 399996,
+      "bones": 15,
+      "walk_checks": [
+        {
+          "clip": "Walk_Forward",
+          "frames": 25,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -1.1661752452596374e-08,
+          "cycle_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Backward",
+          "frames": 25,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -1.1661752452596374e-08,
+          "cycle_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Left",
+          "frames": 25,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": 4.476424919630517e-08,
+          "cycle_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Right",
+          "frames": 25,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": 4.476424919630517e-08,
+          "cycle_position_error_m": 0.0
+        }
+      ]
+    },
+    {
+      "lod": "far",
+      "source": "exports/ai-lab-v4/assets/hi3d-assistant-far.glb",
+      "output": "exports/ai-lab-v4/assets/hi3d-assistant-walk-far.glb",
+      "vertices": 56480,
+      "faces": 99996,
+      "bones": 15,
+      "walk_checks": [
+        {
+          "clip": "Walk_Forward",
+          "frames": 25,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -1.1661752452596374e-08,
+          "cycle_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Backward",
+          "frames": 25,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -1.1661752452596374e-08,
+          "cycle_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Left",
+          "frames": 25,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": 4.476424919630517e-08,
+          "cycle_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Right",
+          "frames": 25,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": 4.476424919630517e-08,
+          "cycle_position_error_m": 0.0
+        }
+      ]
+    }
+  ]
+}

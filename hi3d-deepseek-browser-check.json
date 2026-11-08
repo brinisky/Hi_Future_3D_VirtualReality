@@ -1,0 +1,209 @@
+{
+  "checkedAt": "2026-11-08T09:19:44.345Z",
+  "seconds": 2.837,
+  "checks": [
+    {
+      "label": "默认使用真实对话模式",
+      "passed": true
+    },
+    {
+      "label": "Kimi 开放平台预设保留",
+      "passed": true
+    },
+    {
+      "label": "Kimi Coding 预设保留",
+      "passed": true
+    },
+    {
+      "label": "DeepSeek 自动填入官方模型并隐藏区域",
+      "passed": true
+    },
+    {
+      "label": "未保存服务时不误测上一个平台",
+      "passed": true
+    },
+    {
+      "label": "保存后不回显 Key",
+      "passed": true
+    },
+    {
+      "label": "浏览器存储不含 Key",
+      "passed": true
+    },
+    {
+      "label": "DeepSeek 连接测试使用正确端点与模型（模拟上游）",
+      "passed": true
+    },
+    {
+      "label": "页面正确显示 DeepSeek 状态",
+      "passed": true
+    },
+    {
+      "label": "声音试听触发合成",
+      "passed": true
+    },
+    {
+      "label": "声音和语速偏好保存",
+      "passed": true
+    },
+    {
+      "label": "识别文本经过代理触发真实游戏指令（模拟上游）",
+      "passed": true
+    },
+    {
+      "label": "只朗读助手最终回复，不朗读 JSON 或思考内容",
+      "passed": true
+    },
+    {
+      "label": "播报时停止麦克风识别",
+      "passed": true
+    },
+    {
+      "label": "语音播报驱动说话手势",
+      "passed": true
+    },
+    {
+      "label": "按需远景资源使用成功",
+      "passed": true
+    },
+    {
+      "label": "配置说明可下载",
+      "passed": true
+    },
+    {
+      "label": "冷缓存完整加载：hi3d-lab-architecture.glb",
+      "passed": true
+    },
+    {
+      "label": "冷缓存完整加载：hi3d-console-near.glb",
+      "passed": true
+    },
+    {
+      "label": "冷缓存完整加载：hi3d-assistant-near.glb",
+      "passed": true
+    },
+    {
+      "label": "冷缓存完整加载：hi3d-console-far.glb",
+      "passed": true
+    },
+    {
+      "label": "冷缓存完整加载：hi3d-assistant-far.glb",
+      "passed": true
+    },
+    {
+      "label": "无运行脚本错误",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "label": "无非预期浏览器资源错误",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "requests": [
+    {
+      "path": "/hi3d-index.html",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-style.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-settings.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-game.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/environments/RoomEnvironment.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-dialogue.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three-mesh-bvh/build/index.module.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-voice.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-kimi-client.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-companion.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-lab-details.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/build/three.module.js",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-lab-architecture.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-console-near.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-assistant-near.glb",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    },
+    {
+      "path": "/api/config",
+      "status": 200
+    },
+    {
+      "path": "/api/test",
+      "status": 200
+    },
+    {
+      "path": "/api/chat",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-assistant-far.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-console-far.glb",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    }
+  ],
+  "pageErrors": [],
+  "errors": [],
+  "scope": "Actual final HTML and local cross-origin gateway. Fake Key, simulated upstream, SpeechRecognition and speechSynthesis events. No real Kimi account, microphone or speaker verified."
+}

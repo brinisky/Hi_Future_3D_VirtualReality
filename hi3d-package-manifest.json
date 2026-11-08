@@ -1,0 +1,210 @@
+{
+  "entry": "hi3d-index.html",
+  "version": "4.3",
+  "localPort": 8767,
+  "providers": [
+    "coding",
+    "moonshot",
+    "deepseek"
+  ],
+  "features": [
+    "face-player",
+    "walk-to-front",
+    "obstacle-routing",
+    "give-way",
+    "near-far-synchronized",
+    "bounded-speech-reconnect",
+    "recognition-timeouts",
+    "transcript-draft-preservation",
+    "installed-local-recognition-preference",
+    "natural-four-direction-gait",
+    "independent-elbow-knee-motion",
+    "baked-skirt-inertia",
+    "skirt-stop-turn-accents",
+    "smooth-start-stop"
+  ],
+  "files": [
+    {
+      "path": "hi3d-index.html",
+      "bytes": 12083
+    },
+    {
+      "path": "hi3d-style.css",
+      "bytes": 12839
+    },
+    {
+      "path": "hi3d-settings.css",
+      "bytes": 1880
+    },
+    {
+      "path": "hi3d-game.js",
+      "bytes": 31990
+    },
+    {
+      "path": "hi3d-companion.js",
+      "bytes": 6748
+    },
+    {
+      "path": "hi3d-lab-details.js",
+      "bytes": 3532
+    },
+    {
+      "path": "hi3d-dialogue.js",
+      "bytes": 3691
+    },
+    {
+      "path": "hi3d-kimi-client.js",
+      "bytes": 6043
+    },
+    {
+      "path": "hi3d-voice.js",
+      "bytes": 16400
+    },
+    {
+      "path": "hi3d-server.mjs",
+      "bytes": 13434
+    },
+    {
+      "path": "hi3d-start.command",
+      "bytes": 287
+    },
+    {
+      "path": "hi3d-start-windows.bat",
+      "bytes": 1384
+    },
+    {
+      "path": "hi3d-readme.md",
+      "bytes": 10457
+    },
+    {
+      "path": "hi3d-windows-readme.md",
+      "bytes": 3143
+    },
+    {
+      "path": "hi3d-delivery-check.md",
+      "bytes": 3027
+    },
+    {
+      "path": "hi3d-deepseek-gateway-check.json",
+      "bytes": 1072
+    },
+    {
+      "path": "hi3d-deepseek-browser-check.json",
+      "bytes": 4420
+    },
+    {
+      "path": "hi3d-deepseek-settings-preview.png",
+      "bytes": 307410
+    },
+    {
+      "path": "assets/hi3d-assistant-natural-far.glb",
+      "bytes": 6179724
+    },
+    {
+      "path": "assets/hi3d-assistant-natural-near.glb",
+      "bytes": 24029712
+    },
+    {
+      "path": "assets/hi3d-console-far.glb",
+      "bytes": 2252964
+    },
+    {
+      "path": "assets/hi3d-console-near.glb",
+      "bytes": 7562512
+    },
+    {
+      "path": "assets/hi3d-lab-architecture.glb",
+      "bytes": 3905040
+    },
+    {
+      "path": "vendor/three/LICENSE",
+      "bytes": 1081
+    },
+    {
+      "path": "vendor/three/build/three.module.js",
+      "bytes": 1314681
+    },
+    {
+      "path": "vendor/three/examples/jsm/environments/RoomEnvironment.js",
+      "bytes": 3606
+    },
+    {
+      "path": "vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 110273
+    },
+    {
+      "path": "vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "bytes": 31768
+    },
+    {
+      "path": "vendor/three-mesh-bvh/LICENSE",
+      "bytes": 1072
+    },
+    {
+      "path": "vendor/three-mesh-bvh/build/index.module.js",
+      "bytes": 192653
+    },
+    {
+      "path": "vendor/three-mesh-bvh/build/index.module.js.map",
+      "bytes": 445301
+    },
+    {
+      "path": "hi3d-follow.js",
+      "bytes": 6557
+    },
+    {
+      "path": "hi3d-walk-validation.json",
+      "bytes": 2812
+    },
+    {
+      "path": "hi3d-follow-browser-check.json",
+      "bytes": 39590
+    },
+    {
+      "path": "hi3d-follow-preview.png",
+      "bytes": 864578
+    },
+    {
+      "path": "hi3d-follow-walking-preview.png",
+      "bytes": 857672
+    },
+    {
+      "path": "hi3d-voice-recovery-check.json",
+      "bytes": 9467
+    },
+    {
+      "path": "hi3d-voice-recovery-notes.md",
+      "bytes": 2651
+    },
+    {
+      "path": "hi3d-voice-recovery-preview.png",
+      "bytes": 918245
+    },
+    {
+      "path": "hi3d-natural-animation-check.json",
+      "bytes": 23356
+    },
+    {
+      "path": "hi3d-natural-browser-check.json",
+      "bytes": 43951
+    },
+    {
+      "path": "hi3d-natural-motion-notes.md",
+      "bytes": 4424
+    },
+    {
+      "path": "hi3d-natural-game-preview.png",
+      "bytes": 865118
+    },
+    {
+      "path": "hi3d-natural-walking-preview.png",
+      "bytes": 853645
+    }
+  ],
+  "windowsNativeTest": false,
+  "realAIAccountRetested": false,
+  "voiceRecoveryChecks": 40,
+  "realMicrophoneRetested": false,
+  "naturalMotionBrowserChecks": 34,
+  "naturalMotionPoseSamples": 614
+}

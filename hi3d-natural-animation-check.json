@@ -1,0 +1,769 @@
+{
+  "version": "4.3",
+  "geometry": [
+    {
+      "lod": "near",
+      "finite_float_accessors": 491,
+      "bones": 31,
+      "clips": 12,
+      "embedded_images": 3,
+      "vertices": 214491,
+      "triangles": 399996,
+      "units": "meter",
+      "bytes": 24029712
+    },
+    {
+      "lod": "far",
+      "finite_float_accessors": 490,
+      "bones": 31,
+      "clips": 12,
+      "embedded_images": 3,
+      "vertices": 56480,
+      "triangles": 99996,
+      "units": "meter",
+      "bytes": 6179724
+    }
+  ],
+  "body": {
+    "seconds": 1.2012937920517288,
+    "fps": 24,
+    "cycle_seconds": 1,
+    "records": [
+      {
+        "lod": "near",
+        "source": "hi3d-nova-assistant-walk-near_1.glb",
+        "output": "hi3d-natural-body-near.blend",
+        "vertices": 214491,
+        "faces": 399996,
+        "leg_weight_vertices": 22373,
+        "non_leg_weights_unchanged": true,
+        "joint_rotation_ranges_radians": {
+          "Walk_Forward": {
+            "UpperArm_L": 0.4219996189309413,
+            "Forearm_L": 0.1666730853925551,
+            "Thigh_L": 0.5895644887187899,
+            "Shin_L": 0.7595940428301505
+          },
+          "Walk_Backward": {
+            "UpperArm_L": 0.33928231346887266,
+            "Forearm_L": 0.1666730853925551,
+            "Thigh_L": 0.7256245637126868,
+            "Shin_L": 0.7350406818822233
+          },
+          "Walk_Left": {
+            "UpperArm_L": 0.22554684946421968,
+            "Forearm_L": 0.1666730853925551,
+            "Thigh_L": 0.2514202651014862,
+            "Shin_L": 0.3769608217662117
+          },
+          "Walk_Right": {
+            "UpperArm_L": 0.22554684946421968,
+            "Forearm_L": 0.1666730853925551,
+            "Thigh_L": 0.29261132885421054,
+            "Shin_L": 0.5202004694336617
+          }
+        },
+        "max_extra_hip_lowering_m": 0.013963000060203679
+      },
+      {
+        "lod": "far",
+        "source": "hi3d-nova-assistant-walk-far_1.glb",
+        "output": "hi3d-natural-body-far.blend",
+        "vertices": 56480,
+        "faces": 99996,
+        "leg_weight_vertices": 7651,
+        "non_leg_weights_unchanged": true,
+        "joint_rotation_ranges_radians": {
+          "Walk_Forward": {
+            "UpperArm_L": 0.4219996189309413,
+            "Forearm_L": 0.1666730853925551,
+            "Thigh_L": 0.5897679706275655,
+            "Shin_L": 0.7592930141980103
+          },
+          "Walk_Backward": {
+            "UpperArm_L": 0.33928231346887266,
+            "Forearm_L": 0.1666730853925551,
+            "Thigh_L": 0.7256245637126868,
+            "Shin_L": 0.7350406818822233
+          },
+          "Walk_Left": {
+            "UpperArm_L": 0.22554684946421968,
+            "Forearm_L": 0.1666730853925551,
+            "Thigh_L": 0.2513651133055437,
+            "Shin_L": 0.3773372877849292
+          },
+          "Walk_Right": {
+            "UpperArm_L": 0.22554684946421968,
+            "Forearm_L": 0.1666730853925551,
+            "Thigh_L": 0.29279934223871457,
+            "Shin_L": 0.5207110339432465
+          }
+        },
+        "max_extra_hip_lowering_m": 0.01400012630331815
+      }
+    ]
+  },
+  "flex": {
+    "near": {
+      "lod": "near",
+      "vertices": 214491,
+      "faces": 399996,
+      "body_bones": [
+        "Root",
+        "Spine",
+        "Head",
+        "UpperArm_L",
+        "Forearm_L",
+        "Hand_L",
+        "UpperArm_R",
+        "Forearm_R",
+        "Hand_R",
+        "Thigh_L",
+        "Shin_L",
+        "Foot_L",
+        "Thigh_R",
+        "Shin_R",
+        "Foot_R"
+      ],
+      "auxiliary_bones": [
+        "Flex_hem_00_01",
+        "Flex_hem_00_02",
+        "Flex_hem_01_01",
+        "Flex_hem_01_02",
+        "Flex_hem_02_01",
+        "Flex_hem_02_02",
+        "Flex_hem_03_01",
+        "Flex_hem_03_02",
+        "Flex_hem_04_01",
+        "Flex_hem_04_02",
+        "Flex_hem_05_01",
+        "Flex_hem_05_02",
+        "Flex_hem_06_01",
+        "Flex_hem_06_02",
+        "Flex_hem_07_01",
+        "Flex_hem_07_02"
+      ],
+      "protected_vertices": 193478,
+      "protected_aux_weight_max": 0,
+      "protected_weights_unchanged": true,
+      "max_trimmed_weight": 0.16812706387343468,
+      "chain_lengths_m": {
+        "Flex_hem_00_01": 0.08413180708885193,
+        "Flex_hem_00_02": 0.08577412366867065,
+        "Flex_hem_01_01": 0.08605297654867172,
+        "Flex_hem_01_02": 0.08448787778615952,
+        "Flex_hem_02_01": 0.08302265405654907,
+        "Flex_hem_02_02": 0.09226115792989731,
+        "Flex_hem_03_01": 0.08417505770921707,
+        "Flex_hem_03_02": 0.08906995505094528,
+        "Flex_hem_04_01": 0.08478272706270218,
+        "Flex_hem_04_02": 0.08412401378154755,
+        "Flex_hem_05_01": 0.08422292023897171,
+        "Flex_hem_05_02": 0.08469957858324051,
+        "Flex_hem_06_01": 0.08303150534629822,
+        "Flex_hem_06_02": 0.08400560170412064,
+        "Flex_hem_07_01": 0.08439497649669647,
+        "Flex_hem_07_02": 0.084385447204113
+      },
+      "bakes": [
+        {
+          "clip": "Walk_Forward",
+          "frames": 25,
+          "local_angle_peak_rad": 0.13128498196601868,
+          "last_local_angle_rad": 0.054780688136816025,
+          "first_local_angle_rad": 0.054780688136816025,
+          "variation_rad": 0.12697259802371264,
+          "max_length_error_m": 2.877775748255651e-08
+        },
+        {
+          "clip": "Walk_Backward",
+          "frames": 25,
+          "local_angle_peak_rad": 0.23011411726474762,
+          "last_local_angle_rad": 0.07637657225131989,
+          "first_local_angle_rad": 0.07638281583786011,
+          "variation_rad": 0.22528037847951055,
+          "max_length_error_m": 5.2211450066175225e-08
+        },
+        {
+          "clip": "Walk_Left",
+          "frames": 25,
+          "local_angle_peak_rad": 0.06375660002231598,
+          "last_local_angle_rad": 0.026628317311406136,
+          "first_local_angle_rad": 0.02663727104663849,
+          "variation_rad": 0.05858911573886871,
+          "max_length_error_m": 1.0894551052964552e-08
+        },
+        {
+          "clip": "Walk_Right",
+          "frames": 25,
+          "local_angle_peak_rad": 0.0991949811577797,
+          "last_local_angle_rad": 0.03482964634895325,
+          "first_local_angle_rad": 0.03612670302391052,
+          "variation_rad": 0.0971233791206032,
+          "max_length_error_m": 1.0898108818158114e-08
+        },
+        {
+          "clip": "Hem_Stop",
+          "frames": 37,
+          "local_angle_peak_rad": 0.05212650075554848,
+          "last_local_angle_rad": 0.0,
+          "first_local_angle_rad": 0.0,
+          "variation_rad": 0.05212650075554848,
+          "max_length_error_m": 1.046376766344892e-07
+        },
+        {
+          "clip": "Hem_Turn_Left",
+          "frames": 37,
+          "local_angle_peak_rad": 0.04377767816185951,
+          "last_local_angle_rad": 0.0,
+          "first_local_angle_rad": 0.0,
+          "variation_rad": 0.04377767816185951,
+          "max_length_error_m": 1.1913576222766231e-08
+        },
+        {
+          "clip": "Hem_Turn_Right",
+          "frames": 37,
+          "local_angle_peak_rad": 0.04377223178744316,
+          "last_local_angle_rad": 0.0,
+          "first_local_angle_rad": 0.0,
+          "variation_rad": 0.04377223178744316,
+          "max_length_error_m": 1.1913576222766231e-08
+        }
+      ],
+      "checks": [
+        {
+          "clip": "Walk_Forward",
+          "samples": 49,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -0.0010753590613603592,
+          "pose_change_m": 0.4260789752006531,
+          "loop_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Backward",
+          "samples": 49,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -0.0010815081186592579,
+          "pose_change_m": 0.42339077591896057,
+          "loop_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Left",
+          "samples": 49,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -9.056923590833321e-05,
+          "pose_change_m": 0.18912330269813538,
+          "loop_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Right",
+          "samples": 49,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -8.956937381299213e-05,
+          "pose_change_m": 0.18912330269813538,
+          "loop_position_error_m": 0.0
+        },
+        {
+          "clip": "Hem_Stop",
+          "samples": 37,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": 9.778887033462524e-09,
+          "pose_change_m": 0.010915040969848633,
+          "loop_position_error_m": null
+        },
+        {
+          "clip": "Hem_Turn_Left",
+          "samples": 37,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": 9.778887033462524e-09,
+          "pose_change_m": 0.008783364668488503,
+          "loop_position_error_m": null
+        },
+        {
+          "clip": "Hem_Turn_Right",
+          "samples": 37,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": 9.778887033462524e-09,
+          "pose_change_m": 0.00879153236746788,
+          "loop_position_error_m": null
+        }
+      ],
+      "representative_collision_samples": [
+        {
+          "clip": "Walk_Forward",
+          "frame": 1.0,
+          "near_surface_inside_vertices": 192
+        },
+        {
+          "clip": "Walk_Forward",
+          "frame": 7.0,
+          "near_surface_inside_vertices": 154
+        },
+        {
+          "clip": "Walk_Forward",
+          "frame": 13.0,
+          "near_surface_inside_vertices": 229
+        },
+        {
+          "clip": "Walk_Forward",
+          "frame": 19.0,
+          "near_surface_inside_vertices": 153
+        },
+        {
+          "clip": "Walk_Backward",
+          "frame": 1.0,
+          "near_surface_inside_vertices": 540
+        },
+        {
+          "clip": "Walk_Backward",
+          "frame": 7.0,
+          "near_surface_inside_vertices": 543
+        },
+        {
+          "clip": "Walk_Backward",
+          "frame": 13.0,
+          "near_surface_inside_vertices": 497
+        },
+        {
+          "clip": "Walk_Backward",
+          "frame": 19.0,
+          "near_surface_inside_vertices": 612
+        },
+        {
+          "clip": "Walk_Left",
+          "frame": 1.0,
+          "near_surface_inside_vertices": 206
+        },
+        {
+          "clip": "Walk_Left",
+          "frame": 7.0,
+          "near_surface_inside_vertices": 351
+        },
+        {
+          "clip": "Walk_Left",
+          "frame": 13.0,
+          "near_surface_inside_vertices": 203
+        },
+        {
+          "clip": "Walk_Left",
+          "frame": 19.0,
+          "near_surface_inside_vertices": 322
+        },
+        {
+          "clip": "Walk_Right",
+          "frame": 1.0,
+          "near_surface_inside_vertices": 220
+        },
+        {
+          "clip": "Walk_Right",
+          "frame": 7.0,
+          "near_surface_inside_vertices": 435
+        },
+        {
+          "clip": "Walk_Right",
+          "frame": 13.0,
+          "near_surface_inside_vertices": 229
+        },
+        {
+          "clip": "Walk_Right",
+          "frame": 19.0,
+          "near_surface_inside_vertices": 283
+        }
+      ]
+    },
+    "far": {
+      "lod": "far",
+      "vertices": 56480,
+      "faces": 99996,
+      "body_bones": [
+        "Root",
+        "Spine",
+        "Head",
+        "UpperArm_L",
+        "Forearm_L",
+        "Hand_L",
+        "UpperArm_R",
+        "Forearm_R",
+        "Hand_R",
+        "Thigh_L",
+        "Shin_L",
+        "Foot_L",
+        "Thigh_R",
+        "Shin_R",
+        "Foot_R"
+      ],
+      "auxiliary_bones": [
+        "Flex_hem_00_01",
+        "Flex_hem_00_02",
+        "Flex_hem_01_01",
+        "Flex_hem_01_02",
+        "Flex_hem_02_01",
+        "Flex_hem_02_02",
+        "Flex_hem_03_01",
+        "Flex_hem_03_02",
+        "Flex_hem_04_01",
+        "Flex_hem_04_02",
+        "Flex_hem_05_01",
+        "Flex_hem_05_02",
+        "Flex_hem_06_01",
+        "Flex_hem_06_02",
+        "Flex_hem_07_01",
+        "Flex_hem_07_02"
+      ],
+      "protected_vertices": 50221,
+      "protected_aux_weight_max": 0,
+      "protected_weights_unchanged": true,
+      "max_trimmed_weight": 0.16218044478859994,
+      "chain_lengths_m": {
+        "Flex_hem_00_01": 0.08472742885351181,
+        "Flex_hem_00_02": 0.08551980555057526,
+        "Flex_hem_01_01": 0.0848328098654747,
+        "Flex_hem_01_02": 0.0851198211312294,
+        "Flex_hem_02_01": 0.083370640873909,
+        "Flex_hem_02_02": 0.09357767552137375,
+        "Flex_hem_03_01": 0.08378435671329498,
+        "Flex_hem_03_02": 0.08609367907047272,
+        "Flex_hem_04_01": 0.08552684634923935,
+        "Flex_hem_04_02": 0.08545713871717453,
+        "Flex_hem_05_01": 0.08392176777124405,
+        "Flex_hem_05_02": 0.08485407382249832,
+        "Flex_hem_06_01": 0.08864209800958633,
+        "Flex_hem_06_02": 0.09337404370307922,
+        "Flex_hem_07_01": 0.08412972092628479,
+        "Flex_hem_07_02": 0.08434244245290756
+      },
+      "bakes": [
+        {
+          "clip": "Walk_Forward",
+          "frames": 25,
+          "local_angle_peak_rad": 0.12827740609645844,
+          "last_local_angle_rad": 0.0579986646771431,
+          "first_local_angle_rad": 0.0579986646771431,
+          "variation_rad": 0.1252674381248653,
+          "max_length_error_m": 4.689993090833955e-07
+        },
+        {
+          "clip": "Walk_Backward",
+          "frames": 25,
+          "local_angle_peak_rad": 0.23015253245830536,
+          "last_local_angle_rad": 0.08565502613782883,
+          "first_local_angle_rad": 0.08566338568925858,
+          "variation_rad": 0.22452080575749278,
+          "max_length_error_m": 4.689993090833955e-07
+        },
+        {
+          "clip": "Walk_Left",
+          "frames": 25,
+          "local_angle_peak_rad": 0.04046621546149254,
+          "last_local_angle_rad": 0.026448635384440422,
+          "first_local_angle_rad": 0.02645764872431755,
+          "variation_rad": 0.026117860339581966,
+          "max_length_error_m": 4.689993090833955e-07
+        },
+        {
+          "clip": "Walk_Right",
+          "frames": 25,
+          "local_angle_peak_rad": 0.04038364067673683,
+          "last_local_angle_rad": 0.0356081947684288,
+          "first_local_angle_rad": 0.0356081947684288,
+          "variation_rad": 0.028163857525214553,
+          "max_length_error_m": 4.690011905089664e-07
+        },
+        {
+          "clip": "Hem_Stop",
+          "frames": 37,
+          "local_angle_peak_rad": 0.051786888390779495,
+          "last_local_angle_rad": 0.0,
+          "first_local_angle_rad": 0.0,
+          "variation_rad": 0.051786888390779495,
+          "max_length_error_m": 4.7257896625130247e-07
+        },
+        {
+          "clip": "Hem_Turn_Left",
+          "frames": 37,
+          "local_angle_peak_rad": 0.04436200484633446,
+          "last_local_angle_rad": 0.0,
+          "first_local_angle_rad": 0.0,
+          "variation_rad": 0.04436200484633446,
+          "max_length_error_m": 4.5537380506666114e-07
+        },
+        {
+          "clip": "Hem_Turn_Right",
+          "frames": 37,
+          "local_angle_peak_rad": 0.04436738044023514,
+          "last_local_angle_rad": 0.0,
+          "first_local_angle_rad": 0.0,
+          "variation_rad": 0.04436738044023514,
+          "max_length_error_m": 4.5537380506666114e-07
+        }
+      ],
+      "checks": [
+        {
+          "clip": "Walk_Forward",
+          "samples": 49,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -0.0010753590613603592,
+          "pose_change_m": 0.4260801672935486,
+          "loop_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Backward",
+          "samples": 49,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -0.0010842368938028812,
+          "pose_change_m": 0.42339077591896057,
+          "loop_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Left",
+          "samples": 49,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -9.056923590833321e-05,
+          "pose_change_m": 0.1891438066959381,
+          "loop_position_error_m": 0.0
+        },
+        {
+          "clip": "Walk_Right",
+          "samples": 49,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -8.96709316293709e-05,
+          "pose_change_m": 0.1891438066959381,
+          "loop_position_error_m": 0.0
+        },
+        {
+          "clip": "Hem_Stop",
+          "samples": 37,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -6.984919309616089e-10,
+          "pose_change_m": 0.01011180691421032,
+          "loop_position_error_m": null
+        },
+        {
+          "clip": "Hem_Turn_Left",
+          "samples": 37,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -6.984919309616089e-10,
+          "pose_change_m": 0.008726528845727444,
+          "loop_position_error_m": null
+        },
+        {
+          "clip": "Hem_Turn_Right",
+          "samples": 37,
+          "severe_edges": 0,
+          "severe_areas": 0,
+          "lowest_vertex_m": -6.984919309616089e-10,
+          "pose_change_m": 0.00877508707344532,
+          "loop_position_error_m": null
+        }
+      ],
+      "representative_collision_samples": [
+        {
+          "clip": "Walk_Forward",
+          "frame": 1.0,
+          "near_surface_inside_vertices": 101
+        },
+        {
+          "clip": "Walk_Forward",
+          "frame": 7.0,
+          "near_surface_inside_vertices": 69
+        },
+        {
+          "clip": "Walk_Forward",
+          "frame": 13.0,
+          "near_surface_inside_vertices": 97
+        },
+        {
+          "clip": "Walk_Forward",
+          "frame": 19.0,
+          "near_surface_inside_vertices": 67
+        },
+        {
+          "clip": "Walk_Backward",
+          "frame": 1.0,
+          "near_surface_inside_vertices": 199
+        },
+        {
+          "clip": "Walk_Backward",
+          "frame": 7.0,
+          "near_surface_inside_vertices": 231
+        },
+        {
+          "clip": "Walk_Backward",
+          "frame": 13.0,
+          "near_surface_inside_vertices": 184
+        },
+        {
+          "clip": "Walk_Backward",
+          "frame": 19.0,
+          "near_surface_inside_vertices": 233
+        },
+        {
+          "clip": "Walk_Left",
+          "frame": 1.0,
+          "near_surface_inside_vertices": 90
+        },
+        {
+          "clip": "Walk_Left",
+          "frame": 7.0,
+          "near_surface_inside_vertices": 144
+        },
+        {
+          "clip": "Walk_Left",
+          "frame": 13.0,
+          "near_surface_inside_vertices": 99
+        },
+        {
+          "clip": "Walk_Left",
+          "frame": 19.0,
+          "near_surface_inside_vertices": 144
+        },
+        {
+          "clip": "Walk_Right",
+          "frame": 1.0,
+          "near_surface_inside_vertices": 100
+        },
+        {
+          "clip": "Walk_Right",
+          "frame": 7.0,
+          "near_surface_inside_vertices": 172
+        },
+        {
+          "clip": "Walk_Right",
+          "frame": 13.0,
+          "near_surface_inside_vertices": 97
+        },
+        {
+          "clip": "Walk_Right",
+          "frame": 19.0,
+          "near_surface_inside_vertices": 122
+        }
+      ]
+    }
+  },
+  "onOffAudit": {
+    "fps": 24,
+    "sampling": "Four walk poses plus five stop/turn poses per model. Source clips baked at 24 fps, mixed with interpolation in browser. No second bake at 30/60 fps.",
+    "records": [
+      {
+        "lod": "near",
+        "tests": [
+          {
+            "clip": "Walk_Forward",
+            "aux_on_off_max_m": 0.014706937596201897,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.014706937596201897,
+            "segment_length_error_m": 3.576482203448972e-08
+          },
+          {
+            "clip": "Walk_Backward",
+            "aux_on_off_max_m": 0.01599017344415188,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.01599017344415188,
+            "segment_length_error_m": 4.198941065680639e-08
+          },
+          {
+            "clip": "Hem_Stop",
+            "aux_on_off_max_m": 0.001557245384901762,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.0,
+            "segment_length_error_m": 3.0447750043460786e-08
+          },
+          {
+            "clip": "Hem_Turn_Left",
+            "aux_on_off_max_m": 0.008518105372786522,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.0,
+            "segment_length_error_m": 4.114460282200749e-08
+          },
+          {
+            "clip": "Hem_Turn_Right",
+            "aux_on_off_max_m": 0.008525491692125797,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.0,
+            "segment_length_error_m": 4.059681088519618e-08
+          }
+        ]
+      },
+      {
+        "lod": "far",
+        "tests": [
+          {
+            "clip": "Walk_Forward",
+            "aux_on_off_max_m": 0.015995297580957413,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.015995297580957413,
+            "segment_length_error_m": 3.5728386045541516e-07
+          },
+          {
+            "clip": "Walk_Backward",
+            "aux_on_off_max_m": 0.016011904925107956,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.016011904925107956,
+            "segment_length_error_m": 6.366878106817131e-07
+          },
+          {
+            "clip": "Hem_Stop",
+            "aux_on_off_max_m": 0.001538895070552826,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.0,
+            "segment_length_error_m": 4.639770942033161e-07
+          },
+          {
+            "clip": "Hem_Turn_Left",
+            "aux_on_off_max_m": 0.008455097675323486,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.0,
+            "segment_length_error_m": 4.688900959032294e-07
+          },
+          {
+            "clip": "Hem_Turn_Right",
+            "aux_on_off_max_m": 0.008497186936438084,
+            "protected_on_off_max_m": 0,
+            "last_sample_aux_displacement_m": 0.0,
+            "segment_length_error_m": 4.7131986916082447e-07
+          }
+        ]
+      }
+    ]
+  },
+  "bake": {
+    "seconds": 27.902640333981253,
+    "fps": 24,
+    "spring": {
+      "tau_return": 0.15,
+      "tau_drag": 0.06,
+      "gravity_scale": 0.06
+    },
+    "records": [
+      {
+        "lod": "near",
+        "blend": "exports/natural-motion/hi3d-assistant-natural-near.blend",
+        "glb": "exports/ai-lab-v4/assets/hi3d-assistant-natural-near.glb",
+        "check": "hi3d-natural-check-near.json"
+      },
+      {
+        "lod": "far",
+        "blend": "exports/natural-motion/hi3d-assistant-natural-far.blend",
+        "glb": "exports/ai-lab-v4/assets/hi3d-assistant-natural-far.glb",
+        "check": "hi3d-natural-check-far.json"
+      }
+    ]
+  },
+  "registeredModels": [
+    "hi3d-nova-assistant-walk-near_2.glb",
+    "hi3d-nova-assistant-walk-far_2.glb"
+  ]
+}

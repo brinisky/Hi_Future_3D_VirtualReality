@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b151b"><link rel="icon" href="data:,">
+  <title>NOVA · AI 实验室</title>
+  <link rel="stylesheet" href="./hi3d-style.css">
+  <link rel="stylesheet" href="./hi3d-settings.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/","three-mesh-bvh":"./vendor/three-mesh-bvh/build/index.module.js"}}</script>
+</head>
+<body>
+<canvas id="world" aria-label="可探索的三维 AI 实验室"></canvas>
+<div class="vignette"></div>
+<header class="topbar">
+  <a class="brand" href="./hi3d-index.html" aria-label="NOVA 实验室首页"><span class="brand-symbol">N<span>↗</span></span><span>NOVA<small>AI COMPANION LAB</small></span></a>
+  <div class="location"><span class="tiny-dot"></span> 实验室 01 <span class="divider">/</span> <span id="location-name">中央会话区</span></div>
+  <nav><span id="mode-badge" class="badge">AI · 待配置</span><button id="settings-open" class="icon-button" title="设置" aria-label="打开设置">⚙</button><button id="help-open" class="icon-button" title="操作指南" aria-label="操作指南">?</button></nav>
+</header>
+<main id="hud" class="hidden">
+  <section class="mission glass" aria-label="实验室体验进度">
+    <div class="eyebrow">FIRST CONTACT <span id="mission-count">0 / 3</span></div>
+    <h1>让想法，成为回应。</h1><p>用你的声音，唤醒这间实验室。</p>
+    <ol id="mission-list"><li data-task="talk"><span>01</span>和 NOVA 打个招呼<i></i></li><li data-task="light"><span>02</span>试试改变光环境<i></i></li><li data-task="scan"><span>03</span>完成一次全域扫描<i></i></li></ol>
+    <div id="mission-success" class="hidden">✓ 联合调试完成 · 继续自由探索</div>
+  </section>
+  <div id="assistant-label" class="world-label"><span class="tiny-dot"></span> NOVA <small>你的 AI 助手</small></div>
+  <div id="crosshair" class="hidden">+</div>
+  <div id="context-hint" class="context-hint hidden"><kbd>E</kbd><span>与 NOVA 对话</span></div>
+  <section class="minimap glass"><div class="eyebrow">空间定位 <span id="view-label">LIVE</span></div><canvas id="minimap" width="240" height="180" aria-label="实验室小地图"></canvas><div class="map-legend"><span><i class="cyan"></i>你</span><span><i class="orange"></i>NOVA</span><span>↑ 北</span></div></section>
+  <section class="chat glass" aria-label="与 NOVA 对话">
+    <div class="chat-heading"><div class="avatar">N<span></span></div><div><h2>NOVA <span>AI 助手</span></h2><p id="assistant-status"><span class="tiny-dot"></span>准备就绪，听你说</p></div><button id="chat-collapse" class="icon-button" title="收起对话面板" aria-label="收起对话面板">−</button></div>
+    <div id="chat-body"><div class="mode-note" id="mode-note">Kimi / DeepSeek · 请先配置连接</div><div id="messages" role="log" aria-live="polite"></div>
+    <div id="quick-prompts" class="quick-prompts"><button data-say="介绍一下这里">介绍这里 ↗</button><button data-say="切换夜间灯光">夜间灯光 ↗</button><button data-say="扫描实验室">扫描实验室 ↗</button></div>
+    <div id="speech-caption" class="speech-caption hidden" aria-live="polite"></div>
+    <div id="voice-recovery" class="voice-recovery hidden" role="status" aria-live="polite"><p id="voice-recovery-message"></p><div><button id="voice-retry" type="button">重试语音</button><button id="voice-cancel-retry" class="hidden" type="button">取消重连</button><button id="voice-use-draft" class="hidden" type="button">加入已识别文字</button><button id="voice-use-text" type="button">使用文字</button></div></div>
+    <form id="chat-form"><textarea id="chat-input" rows="1" maxlength="2000" placeholder="对 NOVA 说点什么…" aria-label="发送给助手的消息"></textarea><button type="button" id="mic-button" aria-label="开始语音输入" title="语音输入（V）">◉</button><button type="submit" id="send-button" aria-label="发送消息">↑</button></form>
+    <div class="voice-controls"><button id="conversation-button" aria-pressed="false">连续语音对话</button><button id="cancel-reply" class="hidden">取消请求</button><button id="replay-speech" disabled>重播回复</button><button id="stop-speech" title="停止朗读">停止播报</button></div><div class="chat-footer"><span id="voice-support">正在检查语音支持</span></div></div>
+  </section>
+  <footer class="toolbar glass"><div class="controls-hint"><kbd>W A S D</kbd> 移动 <span>·</span><kbd>拖动</kbd> 环顾 <span>·</span><kbd>V</kbd> 按住说话</div><div><button id="explore-button">↗ 自由探索</button><button id="overview-button">▦ 地图总览</button><button id="closeup-button">◎ 对话近景</button><button id="return-button">⌂ 返回助手</button></div></footer>
+  <div id="scan-panel" class="scan-panel glass hidden"><span class="eyebrow">LAB DIAGNOSTICS</span><h3 id="scan-title">正在扫描空间</h3><div class="scan-track"><i id="scan-progress"></i></div><p id="scan-detail">读取各功能区状态…</p><button id="scan-close" class="hidden">收起报告</button></div>
+</main>
+<section id="welcome" class="welcome"><div class="welcome-content"><div class="eyebrow">A SPACE TO THINK TOGETHER</div><h1>你好，<br>我是 <em>NOVA.</em></h1><p>走进实验室，让一次对话<br>成为探索的开始。</p><div id="loading-label">准备实验室资源…</div><div class="loading-track"><i id="loading-progress"></i></div><button id="enter-button" disabled>正在加载 <span>↗</span></button><p class="welcome-note">真实 3D 空间 · 语音交互 · 可探索实验室</p><div id="load-error" class="hidden"><p id="load-error-text"></p><button onclick="location.reload()">重新加载</button> <a href="./assets/hi3d-lab-architecture.glb" download>下载地图</a></div></div><div class="welcome-corner">01 / NOVA LAB<br><span>LOCAL INTERACTIVE PROTOTYPE</span></div></section>
+<dialog id="settings-dialog">
+<form method="dialog"><button class="dialog-close" aria-label="关闭设置">×</button></form>
+<div class="eyebrow">PREFERENCES</div><h2>对话与声音</h2>
+<section class="setting-section"><h3>AI 服务连接</h3>
+<label>对话模式<select id="backend-mode"><option value="remote">AI 真实对话</option><option value="demo">本地演示</option></select></label>
+<div id="endpoint-row"><label>本地服务地址<input id="backend-url" type="url" value="http://127.0.0.1:8767/api/chat"><small>随包服务默认使用 8767 端口。</small></label></div>
+<div id="kimi-settings">
+<div class="setting-grid"><label>服务<select id="kimi-provider"><option value="coding">Kimi for Coding</option><option value="moonshot">Kimi 开放平台</option><option value="deepseek">DeepSeek V4.1 Flash</option></select></label><label id="region-row">服务区域<select id="kimi-region"><option value="cn">中国站</option><option value="global">国际站</option></select></label></div>
+<p id="provider-note" class="setting-note">请选择服务并填写对应平台的 Key。</p>
+<label>模型 ID<input id="kimi-model" type="text" value="kimi-for-coding" spellcheck="false" autocomplete="off"></label>
+<label>API Key<input id="kimi-key" type="password" placeholder="在这里输入你的 API Key" autocomplete="new-password" spellcheck="false" autocapitalize="off"><small>只发送给本机服务，不存入浏览器；保存后不回显。请不要发到聊天中。</small></label>
+<label class="switch-row">记住 Key（本机文件，未加密）<input id="remember-key" type="checkbox"></label>
+<p class="setting-note">不勾选时仅在本地服务的当前进程中保留。Coding 权益面向编程，游戏产品集成建议选择开放平台；Kimi 和 DeepSeek 使用各自平台的 Key。<a href="https://www.kimi.com/code/docs/#获取-api-key" target="_blank" rel="noopener noreferrer">官方说明 ↗</a></p>
+<p id="kimi-status" role="status">正在检查本地服务…</p>
+<div class="setting-actions"><button id="save-kimi" type="button">保存 Key</button><button id="test-kimi" type="button">测试连接</button><button id="refresh-kimi" type="button">刷新</button><button id="forget-kimi" type="button">清除 Key</button></div>
+<small class="subtle">测试连接会发送一条短请求，并使用所选账户的额度。</small>
+</div></section>
+<section class="setting-section"><h3>语音输入与输出</h3>
+<label>语音识别方式<select id="recognition-mode"><option value="auto">自动（优先本机已安装识别）</option><option value="browser">浏览器联网识别</option></select></label>
+<p id="recognition-note" class="setting-note">正在检查浏览器的本机识别支持…</p>
+<label class="switch-row">自动朗读助手回复<input id="tts-toggle" type="checkbox" checked></label>
+<label>中文声音<select id="voice-select"><option value="">系统默认中文声音</option></select></label>
+<label>语速 <span id="voice-rate-value">1.00×</span><input id="voice-rate" type="range" min="0.7" max="1.4" step="0.05" value="1"></label>
+<p id="voice-device-note"></p><button id="test-voice" type="button" class="secondary">试听声音（不调用 AI）</button>
+<p class="setting-note">点麦克风或按住 V 输入语音；开启“连续语音对话”后，助手说完会继续聆听。短暂断线最多自动重连两次，恢复后请重新说。识别中断时已得到的文字会保留供确认，不会自动发送不完整内容。识别需要麦克风权限；不可用时仍可输入文字。</p>
+</section>
+<section class="setting-section"><h3>画面与动作</h3>
+<label>画面清晰度<select id="quality-select"><option value="1">标准</option><option value="1.5">清晰</option><option value="2">高</option></select></label>
+<label>人物待机<select id="idle-select"><option value="auto">自然切换（推荐）</option><option value="Idle_Breathe">自然呼吸</option><option value="Idle_Relaxed">放松站姿</option><option value="Idle_Glance">轻微环顾</option><option value="Listen_Nod">倾听点头</option><option value="Talk_Gesture">轻柔手势</option></select></label>
+</section>
+<button id="save-settings" class="primary">应用声音与画面设置</button><button id="reset-button" class="secondary">重置体验进度</button><a class="doc-link" href="./hi3d-readme.md" download>下载配置与操作说明 ↗</a>
+</dialog>
+<dialog id="help-dialog"><form method="dialog"><button class="dialog-close" aria-label="关闭操作指南">×</button></form><div class="eyebrow">FIELD GUIDE</div><h2>和 NOVA 一起探索</h2><ul><li><b>W / A / S / D</b> 移动，Shift 加速。</li><li><b>拖动场景</b> 环顾；“自由探索”锁定鼠标，Esc 释放。</li><li><b>E</b> 在助手附近打开对话；Enter 聚焦文字输入。</li><li><b>V</b> 按住说话，松开结束；也可点击麦克风按钮。开启“连续语音对话”后，助手读完回复会继续聆听。</li><li><b>主动陪伴</b> NOVA 会面向你，沿可通行路线走到你前方，停下后保持交谈距离。墙边会选择附近安全位置；打开设置或地图总览时暂停跟随。</li><li><b>地图总览</b> 俯瞰实验室；再次点击返回原位置。</li><li>试说：“你好”“切换夜间灯光”“扫描实验室”“查看地图”“返回助手”。</li></ul><p>语音识别需要兼容浏览器与麦克风权限；不可用时请使用文字。推荐电脑 Chrome / Edge。人物具有四方向轻步行走、五段待机、眨眼与柔和微笑；可在设置中单独查看。尚未制作音素口型同步。</p><button id="help-close" class="primary">开始探索</button></dialog>
+<div id="toast" role="status" class="toast hidden"></div>
+<noscript>此 3D 游戏需要启用 JavaScript。</noscript>
+<script type="module" src="./hi3d-game.js"></script>
+</body></html>

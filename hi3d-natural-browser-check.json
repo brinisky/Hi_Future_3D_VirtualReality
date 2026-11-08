@@ -1,0 +1,1885 @@
+{
+  "checkedAt": "2026-11-08T10:45:45.680Z",
+  "seconds": 71.148,
+  "checks": [
+    {
+      "label": "欢迎页不提前走动",
+      "passed": true
+    },
+    {
+      "label": "开局主动靠近并播放实际行走动作",
+      "passed": true,
+      "detail": {
+        "status": "approaching",
+        "moving": true,
+        "yaw": 0,
+        "distance": 2.4,
+        "speed": 0.6799999999999748,
+        "velocity": [
+          0,
+          0,
+          0.6799999999999748
+        ],
+        "goal": [
+          0,
+          -0.005999997258186285,
+          5.1
+        ],
+        "waypoints": [
+          [
+            0,
+            -0.005999997258186285,
+            5.1
+          ]
+        ],
+        "searches": 1,
+        "cachedCells": 0
+      }
+    },
+    {
+      "label": "四方向步行动作均成功解析",
+      "passed": true
+    },
+    {
+      "label": "三个裙摆停步/转向片段成功解析并注册",
+      "passed": true
+    },
+    {
+      "label": "行走片段去掉首帧偏移，完整步长为一秒",
+      "passed": true
+    },
+    {
+      "label": "到达玩家正前方并保持交谈距离",
+      "passed": true,
+      "detail": {
+        "distance": 2.508504855136965,
+        "front": 1
+      }
+    },
+    {
+      "label": "身体正面朝向玩家",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "label": "停步恢复待机，脚底处为可通行地面",
+      "passed": true
+    },
+    {
+      "label": "实际到点停止触发裙摆回摆",
+      "passed": true,
+      "detail": {
+        "active": [
+          "Hem_Stop"
+        ],
+        "last": "Hem_Stop",
+        "counts": {
+          "stop": 1,
+          "turn": 0
+        }
+      }
+    },
+    {
+      "label": "靠近后头部保留在视野内",
+      "passed": true,
+      "detail": {
+        "head": [
+          0,
+          0.4643998059886832,
+          0.9597649159458956
+        ],
+        "feet": [
+          0,
+          -0.9182744552635175,
+          0.9637975734137898
+        ]
+      }
+    },
+    {
+      "label": "停步后无来回抖动",
+      "passed": true
+    },
+    {
+      "label": "真实键盘侧移后重新走到前方并面向玩家",
+      "passed": true
+    },
+    {
+      "label": "玩家实际绕过中央设备到另一侧",
+      "passed": true,
+      "detail": [
+        -5.551115123125783e-15,
+        -0.005999997258186285,
+        -8.249370000000019
+      ]
+    },
+    {
+      "label": "中央设备阻挡时使用绕行路径",
+      "passed": true
+    },
+    {
+      "label": "绕行沿安全地面，保持玩家碰撞间隔",
+      "passed": true
+    },
+    {
+      "label": "沿实际地图走到设备另一侧玩家前方",
+      "passed": true,
+      "detail": {
+        "status": "at-player",
+        "moving": false,
+        "yaw": 6.255000937487444,
+        "distance": 2.4,
+        "speed": 0,
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          -5.551115123125783e-15,
+          -0.005999997258186285,
+          -10.149370000000019
+        ],
+        "waypoints": [],
+        "searches": 24,
+        "cachedCells": 354
+      }
+    },
+    {
+      "label": "实际绕行/转向触发裙摆侧向滞后",
+      "passed": true,
+      "detail": {
+        "active": [
+          "Hem_Stop"
+        ],
+        "last": "Hem_Stop",
+        "counts": {
+          "stop": 5,
+          "turn": 5
+        }
+      }
+    },
+    {
+      "label": "转身后助手绕过玩家，不穿过玩家身体",
+      "passed": true,
+      "detail": 0.8805487734323524
+    },
+    {
+      "label": "转身后到达视线前侧安全位置并面向玩家",
+      "passed": true,
+      "detail": {
+        "front": 0.9998459008223815,
+        "faceError": 0.000016406570756433827,
+        "status": "at-player"
+      }
+    },
+    {
+      "label": "打开设置暂停跟随",
+      "passed": true
+    },
+    {
+      "label": "保留 DeepSeek 配置选项",
+      "passed": true
+    },
+    {
+      "label": "更新后的操作说明可下载",
+      "passed": true
+    },
+    {
+      "label": "远景按需加载，位置朝向与近景同步",
+      "passed": true
+    },
+    {
+      "label": "近远景步态相位和裙摆回摆状态同步",
+      "passed": true
+    },
+    {
+      "label": "地图总览不把空中相机当成玩家追逐",
+      "passed": true
+    },
+    {
+      "label": "对话近景距离和脸部构图保留",
+      "passed": true
+    },
+    {
+      "label": "原有对话指令仍可控制实验室",
+      "passed": true
+    },
+    {
+      "label": "冷缓存实际加载并使用：hi3d-lab-architecture.glb",
+      "passed": true
+    },
+    {
+      "label": "冷缓存实际加载并使用：hi3d-console-near.glb",
+      "passed": true
+    },
+    {
+      "label": "冷缓存实际加载并使用：hi3d-assistant-natural-near.glb",
+      "passed": true
+    },
+    {
+      "label": "冷缓存实际加载并使用：hi3d-console-far.glb",
+      "passed": true
+    },
+    {
+      "label": "冷缓存实际加载并使用：hi3d-assistant-natural-far.glb",
+      "passed": true
+    },
+    {
+      "label": "运行与按需资源 HTTP 请求无失败",
+      "passed": true
+    },
+    {
+      "label": "无浏览器脚本或资源错误",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "measurements": {
+    "walking": {
+      "ready": true,
+      "entered": true,
+      "view": "first",
+      "lighting": "day",
+      "tasks": {
+        "talk": false,
+        "light": false,
+        "scan": false
+      },
+      "scanning": false,
+      "mode": "demo",
+      "listening": false,
+      "busy": false,
+      "speaking": false,
+      "voice": {
+        "hasRecognition": false,
+        "hasTTS": false,
+        "handsfree": false,
+        "queuedSpeech": false,
+        "voiceCount": 0,
+        "phase": "idle",
+        "engine": "browser",
+        "localAvailability": "unsupported",
+        "retryAttempt": 0,
+        "recovering": false,
+        "lastError": ""
+      },
+      "player": [
+        0,
+        -0.00599999725818634,
+        7.5
+      ],
+      "playerYaw": 0,
+      "playerPitch": -0.1575079474075775,
+      "assistant": [
+        0,
+        -0.005999997258186285,
+        4.5669470750000025
+      ],
+      "follow": {
+        "status": "approaching",
+        "moving": true,
+        "yaw": 0,
+        "distance": 2.4,
+        "speed": 0.6799999999999748,
+        "velocity": [
+          0,
+          0,
+          0.6799999999999748
+        ],
+        "goal": [
+          0,
+          -0.005999997258186285,
+          5.1
+        ],
+        "waypoints": [
+          [
+            0,
+            -0.005999997258186285,
+            5.1
+          ]
+        ],
+        "searches": 1,
+        "cachedCells": 0
+      },
+      "assistantGroundClear": true,
+      "triangles": 1076900,
+      "calls": 30,
+      "lod": "near",
+      "distantLoaded": false,
+      "companion": {
+        "active": "Walk_Forward",
+        "idle": "Idle_Breathe",
+        "mode": "auto",
+        "walkWeight": 0.999925073280844,
+        "walkPhase": 0.6866868750000039,
+        "position": [
+          0,
+          -0.005999997258186285,
+          4.5669470750000025
+        ],
+        "yaw": 0,
+        "blink": 0,
+        "smile": 0.3090597610138733,
+        "clips": [
+          "Idle_Breathe",
+          "Idle_Glance",
+          "Idle_Relaxed",
+          "Listen_Nod",
+          "Talk_Gesture",
+          "Walk_Backward",
+          "Walk_Forward",
+          "Walk_Left",
+          "Walk_Right",
+          "Hem_Stop",
+          "Hem_Turn_Left",
+          "Hem_Turn_Right"
+        ],
+        "hem": {
+          "active": [],
+          "last": "",
+          "counts": {
+            "stop": 0,
+            "turn": 0
+          }
+        },
+        "strideDuration": 0.9999999403953552
+      },
+      "frameMedianMs": 16.699999999999818,
+      "renderScale": 1,
+      "animationTime": 1.5831999999999986,
+      "ground": -0.00599999725818634,
+      "colliders": 17,
+      "ceilingVisible": true,
+      "consoleLevels": [
+        "near",
+        "near",
+        "near"
+      ],
+      "framing": {
+        "head": [
+          0,
+          0.4463431094243184,
+          0.9657062206189112
+        ],
+        "feet": [
+          0,
+          -0.7504186360890966,
+          0.9686914258995866
+        ]
+      }
+    },
+    "arrived": {
+      "ready": true,
+      "entered": true,
+      "view": "first",
+      "lighting": "day",
+      "tasks": {
+        "talk": false,
+        "light": false,
+        "scan": false
+      },
+      "scanning": false,
+      "mode": "demo",
+      "listening": false,
+      "busy": false,
+      "speaking": false,
+      "voice": {
+        "hasRecognition": false,
+        "hasTTS": false,
+        "handsfree": false,
+        "queuedSpeech": false,
+        "voiceCount": 0,
+        "phase": "idle",
+        "engine": "browser",
+        "localAvailability": "unsupported",
+        "retryAttempt": 0,
+        "recovering": false,
+        "lastError": ""
+      },
+      "player": [
+        0,
+        -0.00599999725818634,
+        7.5
+      ],
+      "playerYaw": 0,
+      "playerPitch": -0.1575079474075775,
+      "assistant": [
+        0,
+        -0.005999997258186285,
+        4.991495144863035
+      ],
+      "follow": {
+        "status": "at-player",
+        "moving": false,
+        "yaw": 0,
+        "distance": 2.4,
+        "speed": 0,
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          0,
+          -0.005999997258186285,
+          5.1
+        ],
+        "waypoints": [],
+        "searches": 1,
+        "cachedCells": 0
+      },
+      "assistantGroundClear": true,
+      "triangles": 1076900,
+      "calls": 30,
+      "lod": "near",
+      "distantLoaded": false,
+      "companion": {
+        "active": "Idle_Breathe",
+        "idle": "Idle_Breathe",
+        "mode": "auto",
+        "walkWeight": 0.0005530843507333155,
+        "walkPhase": 0.31102227185740394,
+        "position": [
+          0,
+          -0.005999997258186285,
+          4.991495144863035
+        ],
+        "yaw": 0,
+        "blink": 0,
+        "smile": 0.34710214419541596,
+        "clips": [
+          "Idle_Breathe",
+          "Idle_Glance",
+          "Idle_Relaxed",
+          "Listen_Nod",
+          "Talk_Gesture",
+          "Walk_Backward",
+          "Walk_Forward",
+          "Walk_Left",
+          "Walk_Right",
+          "Hem_Stop",
+          "Hem_Turn_Left",
+          "Hem_Turn_Right"
+        ],
+        "hem": {
+          "active": [
+            "Hem_Stop"
+          ],
+          "last": "Hem_Stop",
+          "counts": {
+            "stop": 1,
+            "turn": 0
+          }
+        },
+        "strideDuration": 0.9999999403953552
+      },
+      "frameMedianMs": 16.699999999999818,
+      "renderScale": 1,
+      "animationTime": 3.099799999999996,
+      "ground": -0.00599999725818634,
+      "colliders": 17,
+      "ceilingVisible": true,
+      "consoleLevels": [
+        "near",
+        "near",
+        "near"
+      ],
+      "framing": {
+        "head": [
+          0,
+          0.4643998059886832,
+          0.9597649159458956
+        ],
+        "feet": [
+          0,
+          -0.9182744552635175,
+          0.9637975734137898
+        ]
+      }
+    },
+    "sidestep": {
+      "ready": true,
+      "entered": true,
+      "view": "first",
+      "lighting": "day",
+      "tasks": {
+        "talk": false,
+        "light": false,
+        "scan": false
+      },
+      "scanning": false,
+      "mode": "demo",
+      "listening": false,
+      "busy": false,
+      "speaking": false,
+      "voice": {
+        "hasRecognition": false,
+        "hasTTS": false,
+        "handsfree": false,
+        "queuedSpeech": false,
+        "voiceCount": 0,
+        "phase": "idle",
+        "engine": "browser",
+        "localAvailability": "unsupported",
+        "retryAttempt": 0,
+        "recovering": false,
+        "lastError": ""
+      },
+      "player": [
+        2.6247899999999995,
+        0,
+        7.5
+      ],
+      "playerYaw": 0,
+      "playerPitch": -0.1575079474075775,
+      "assistant": [
+        2.5173275041159853,
+        0,
+        5.081128055978795
+      ],
+      "follow": {
+        "status": "at-player",
+        "moving": false,
+        "yaw": 0.04443108857633428,
+        "distance": 2.4,
+        "speed": 0,
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          2.6247899999999995,
+          0,
+          5.1
+        ],
+        "waypoints": [],
+        "searches": 5,
+        "cachedCells": 0
+      },
+      "assistantGroundClear": true,
+      "triangles": 1076900,
+      "calls": 30,
+      "lod": "near",
+      "distantLoaded": false,
+      "companion": {
+        "active": "Idle_Glance",
+        "idle": "Idle_Glance",
+        "mode": "auto",
+        "walkWeight": 0.0005536377311523622,
+        "walkPhase": 0.6096578898034577,
+        "position": [
+          2.5173275041159853,
+          0,
+          5.081128055978795
+        ],
+        "yaw": 0.04443108857633428,
+        "blink": 0,
+        "smile": 0.3472629429473311,
+        "clips": [
+          "Idle_Breathe",
+          "Idle_Glance",
+          "Idle_Relaxed",
+          "Listen_Nod",
+          "Talk_Gesture",
+          "Walk_Backward",
+          "Walk_Forward",
+          "Walk_Left",
+          "Walk_Right",
+          "Hem_Stop",
+          "Hem_Turn_Left",
+          "Hem_Turn_Right"
+        ],
+        "hem": {
+          "active": [
+            "Hem_Stop"
+          ],
+          "last": "Hem_Stop",
+          "counts": {
+            "stop": 2,
+            "turn": 1
+          }
+        },
+        "strideDuration": 0.9999999403953552
+      },
+      "frameMedianMs": 16.69999999999891,
+      "renderScale": 1,
+      "animationTime": 13.549399999999943,
+      "ground": 0,
+      "colliders": 17,
+      "ceilingVisible": true,
+      "consoleLevels": [
+        "near",
+        "near",
+        "near"
+      ],
+      "framing": {
+        "head": [
+          -0.064908338952604,
+          0.4690299204926453,
+          0.958241441215015
+        ],
+        "feet": [
+          -0.05826688872872056,
+          -0.9605382437591845,
+          0.9625653686120379
+        ]
+      }
+    },
+    "corridorStart": {
+      "ready": true,
+      "entered": true,
+      "view": "first",
+      "lighting": "day",
+      "tasks": {
+        "talk": false,
+        "light": false,
+        "scan": false
+      },
+      "scanning": false,
+      "mode": "demo",
+      "listening": false,
+      "busy": false,
+      "speaking": false,
+      "voice": {
+        "hasRecognition": false,
+        "hasTTS": false,
+        "handsfree": false,
+        "queuedSpeech": false,
+        "voiceCount": 0,
+        "phase": "idle",
+        "engine": "browser",
+        "localAvailability": "unsupported",
+        "retryAttempt": 0,
+        "recovering": false,
+        "lastError": ""
+      },
+      "player": [
+        -5.551115123125783e-15,
+        -0.005999997258186285,
+        -8.249370000000019
+      ],
+      "playerYaw": 0,
+      "playerPitch": -0.1575079474075775,
+      "assistant": [
+        2.4674047670770523,
+        0,
+        0.8435661670924801
+      ],
+      "follow": {
+        "status": "approaching",
+        "moving": true,
+        "yaw": 3.380363184384737,
+        "distance": 2.4,
+        "speed": 0.5734386410666684,
+        "velocity": [
+          -0.07860272529935147,
+          0,
+          -0.5680259559596745
+        ],
+        "goal": [
+          1.0499999999999945,
+          0,
+          -9.399370000000019
+        ],
+        "waypoints": [
+          [
+            1.0499999999999945,
+            0,
+            -9.399370000000019
+          ]
+        ],
+        "searches": 23,
+        "cachedCells": 320
+      },
+      "assistantGroundClear": true,
+      "triangles": 232674,
+      "calls": 17,
+      "lod": "far",
+      "distantLoaded": true,
+      "companion": {
+        "active": "Walk_Forward",
+        "idle": "Idle_Breathe",
+        "mode": "auto",
+        "walkWeight": 0.9999999999999999,
+        "walkPhase": 0.5571450996303502,
+        "position": [
+          2.4674047670770523,
+          0,
+          0.8435661670924801
+        ],
+        "yaw": 3.380363184384737,
+        "blink": 0,
+        "smile": 0.3420569121112004,
+        "clips": [
+          "Idle_Breathe",
+          "Idle_Glance",
+          "Idle_Relaxed",
+          "Listen_Nod",
+          "Talk_Gesture",
+          "Walk_Backward",
+          "Walk_Forward",
+          "Walk_Left",
+          "Walk_Right",
+          "Hem_Stop",
+          "Hem_Turn_Left",
+          "Hem_Turn_Right"
+        ],
+        "hem": {
+          "active": [],
+          "last": "Hem_Turn_Left",
+          "counts": {
+            "stop": 3,
+            "turn": 2
+          }
+        },
+        "strideDuration": 0.9999999403953552
+      },
+      "frameMedianMs": 16.700000000000728,
+      "renderScale": 1,
+      "animationTime": 23.365699999999766,
+      "ground": -0.00599999725818634,
+      "colliders": 17,
+      "ceilingVisible": true,
+      "consoleLevels": [
+        "near",
+        "near",
+        "near"
+      ],
+      "farCompanion": {
+        "active": "Walk_Forward",
+        "idle": "Idle_Breathe",
+        "mode": "auto",
+        "walkWeight": 0.9999999999999999,
+        "walkPhase": 0.5571450996303502,
+        "position": [
+          2.4674047670770523,
+          0,
+          0.8435661670924801
+        ],
+        "yaw": 3.380363184384737,
+        "blink": 0,
+        "smile": 0.3420569121112004,
+        "clips": [
+          "Idle_Breathe",
+          "Idle_Glance",
+          "Idle_Relaxed",
+          "Listen_Nod",
+          "Talk_Gesture",
+          "Walk_Backward",
+          "Walk_Forward",
+          "Walk_Left",
+          "Walk_Right",
+          "Hem_Stop",
+          "Hem_Turn_Left",
+          "Hem_Turn_Right"
+        ],
+        "hem": {
+          "active": [],
+          "last": "Hem_Turn_Left",
+          "counts": {
+            "stop": 3,
+            "turn": 2
+          }
+        },
+        "strideDuration": 0.9999999403953552
+      },
+      "framing": {
+        "head": [
+          -0.3918418102622157,
+          0.3064943073023147,
+          1.0116108595050615
+        ],
+        "feet": [
+          -0.4039475942940687,
+          0.7331157269405782,
+          1.011954120863223
+        ]
+      }
+    },
+    "obstacleRoute": {
+      "samples": [
+        {
+          "assistant": [
+            2.4674047670770523,
+            0,
+            0.8435661670924801
+          ],
+          "clear": true,
+          "gap": 9.421760685955327,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.425837809204823,
+            0,
+            0.6031604080827616
+          ],
+          "clear": true,
+          "gap": 9.178887933872923,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.3864836546843127,
+            0,
+            0.37555257070455483
+          ],
+          "clear": true,
+          "gap": 8.948999585692503,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.3472827601538686,
+            0,
+            0.14883112449192096
+          ],
+          "clear": true,
+          "gap": 8.72006413299428,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.306619710426513,
+            0,
+            -0.08634681091061333
+          ],
+          "clear": true,
+          "gap": 8.482655366931954,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.267740806564532,
+            0,
+            -0.3112059988534973
+          ],
+          "clear": true,
+          "gap": 8.255731104805712,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.2290289568030586,
+            0,
+            -0.5350990163118485
+          ],
+          "clear": true,
+          "gap": 8.029853479363107,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.190490967115184,
+            0,
+            -0.7579865004068027
+          ],
+          "clear": true,
+          "gap": 7.805067418990738,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.150536670454198,
+            -0.005999997258186285,
+            -0.9890653068955789
+          ],
+          "clear": true,
+          "gap": 7.572108834907393,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.1107969636332578,
+            0,
+            -1.2189030162241847
+          ],
+          "clear": true,
+          "gap": 7.340499290351132,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.072842072466072,
+            0,
+            -1.4384181043195499
+          ],
+          "clear": true,
+          "gap": 7.119391826740458,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            2.0350930574609007,
+            0,
+            -1.656742491494651
+          ],
+          "clear": true,
+          "gap": 6.8995899311790465,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.9975589361545099,
+            -0.005999997258186285,
+            -1.8738240241187771
+          ],
+          "clear": true,
+          "gap": 6.681154705137896,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.9587058953197773,
+            0,
+            -2.098533631216342
+          ],
+          "clear": true,
+          "gap": 6.455177520402706,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.9216407096087649,
+            0,
+            -2.3129030380678715
+          ],
+          "clear": true,
+          "gap": 6.239739017534115,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.884830388689632,
+            0,
+            -2.5257984144184156
+          ],
+          "clear": true,
+          "gap": 6.025932068104074,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.8467471612950077,
+            0,
+            -2.746055745144592
+          ],
+          "clear": true,
+          "gap": 5.804906792141123,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.810465234487705,
+            0,
+            -2.9558951127320943
+          ],
+          "clear": true,
+          "gap": 5.5945206003217836,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.7744656730384833,
+            0,
+            -3.1641013981383987
+          ],
+          "clear": true,
+          "gap": 5.385971145287688,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.738762003947222,
+            0,
+            -3.3705963668994188
+          ],
+          "clear": true,
+          "gap": 5.179355700220658,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.7018978402807141,
+            0,
+            -3.58380314699978
+          ],
+          "clear": true,
+          "gap": 4.966283350612078,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.666852401156342,
+            0,
+            -3.786491191153057
+          ],
+          "clear": true,
+          "gap": 4.76399876046331,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.6321402417755553,
+            0,
+            -3.987251685785737
+          ],
+          "clear": true,
+          "gap": 4.5639384629050355,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.597787136121273,
+            0,
+            -4.185935565047363
+          ],
+          "clear": true,
+          "gap": 4.366282530885242,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.5638109909314295,
+            0,
+            -4.382439263915496
+          ],
+          "clear": true,
+          "gap": 4.171169875830177,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.5288459222379838,
+            0,
+            -4.584662479381808
+          ],
+          "clear": true,
+          "gap": 3.970824985518677,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.4956906967274908,
+            0,
+            -4.776418324938016
+          ],
+          "clear": true,
+          "gap": 3.7813336268561595,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.4629892232327915,
+            0,
+            -4.965549860144299
+          ],
+          "clear": true,
+          "gap": 3.594970400186536,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.4294103754064258,
+            0,
+            -5.159755758569276
+          ],
+          "clear": true,
+          "gap": 3.4042517800790253,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.397661753418198,
+            0,
+            -5.343376402400222
+          ],
+          "clear": true,
+          "gap": 3.224632873097193,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.366419013703784,
+            0,
+            -5.524071236447842
+          ],
+          "clear": true,
+          "gap": 3.0486643422374757,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.3357060764813706,
+            0,
+            -5.701701916255308
+          ],
+          "clear": true,
+          "gap": 2.876581893094775,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.3055472056649646,
+            0,
+            -5.8761281095740685
+          ],
+          "clear": true,
+          "gap": 2.7086399865416126,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.274751948712823,
+            0,
+            -6.054234891990907
+          ],
+          "clear": true,
+          "gap": 2.5384268106765115,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.245792001306872,
+            0,
+            -6.221727017789717
+          ],
+          "clear": true,
+          "gap": 2.3797759923629114,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.217472393970829,
+            0,
+            -6.385515686602244
+          ],
+          "clear": true,
+          "gap": 2.2262506443912744,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.18979950301363,
+            0,
+            -6.545564020545958
+          ],
+          "clear": true,
+          "gap": 2.0781187822150358,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.1616716720545985,
+            0,
+            -6.708243535649972
+          ],
+          "clear": true,
+          "gap": 1.9299098043106095,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.1353648702444468,
+            0,
+            -6.860390985933152
+          ],
+          "clear": true,
+          "gap": 1.7939665799850806,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.1097457222471587,
+            -0.005999997258186285,
+            -7.00856133648905
+          ],
+          "clear": true,
+          "gap": 1.6646746551472922,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.0837879040607519,
+            0,
+            -7.158690412629806
+          ],
+          "clear": true,
+          "gap": 1.5375884310485906,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.0595660468134505,
+            0,
+            -7.298779422608883
+          ],
+          "clear": true,
+          "gap": 1.4234825792347119,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.035986755045455,
+            0,
+            -7.435152104771988
+          ],
+          "clear": true,
+          "gap": 1.3176567601386893,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            1.0130097485469034,
+            0,
+            -7.568041422870151
+          ],
+          "clear": true,
+          "gap": 1.2208183241845942,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.9896409058377341,
+            0,
+            -7.703196956405842
+          ],
+          "clear": true,
+          "gap": 1.1303513241715022,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.9676305224649924,
+            0,
+            -7.830495733888762
+          ],
+          "clear": true,
+          "gap": 1.0544024273569028,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.9458806324324879,
+            0,
+            -7.956287927720092
+          ],
+          "clear": true,
+          "gap": 0.9902460663404776,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.9232597865338793,
+            0,
+            -8.08711736307144
+          ],
+          "clear": true,
+          "gap": 0.9374084230584188,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.9012591938997206,
+            0,
+            -8.214359515050337
+          ],
+          "clear": true,
+          "gap": 0.9019389495111052,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.8784990092647429,
+            0,
+            -8.345994826905306
+          ],
+          "clear": true,
+          "gap": 0.8837968468226288,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.8545088599669122,
+            0,
+            -8.484743735796583
+          ],
+          "clear": true,
+          "gap": 0.8863330002119928,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.8024145635215042,
+            0,
+            -8.614907713132748
+          ],
+          "clear": true,
+          "gap": 0.8817522052559442,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.7370821233617996,
+            0,
+            -8.739843338795023
+          ],
+          "clear": true,
+          "gap": 0.8853553821196697,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.6741383013726121,
+            0,
+            -8.860211195292814
+          ],
+          "clear": true,
+          "gap": 0.909719415668529,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.6113431698539304,
+            -0.000536216103250331,
+            -8.980294710092709
+          ],
+          "clear": true,
+          "gap": 0.9528858290221036,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.5521755535210299,
+            0,
+            -9.093441305374105
+          ],
+          "clear": true,
+          "gap": 1.0086397823118898,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.4931210317989416,
+            0,
+            -9.206371629138227
+          ],
+          "clear": true,
+          "gap": 1.0765781300842232,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.43102144932573094,
+            0,
+            -9.325125041236275
+          ],
+          "clear": true,
+          "gap": 1.1588910209869079,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.37035055193201705,
+            0,
+            -9.441146370102091
+          ],
+          "clear": true,
+          "gap": 1.247994570360795,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.30833318242857377,
+            0,
+            -9.559742565834267
+          ],
+          "clear": true,
+          "gap": 1.3461595792020968,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.2447535791632836,
+            0,
+            -9.681326230762293
+          ],
+          "clear": true,
+          "gap": 1.4527226030223876,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.17948678197502438,
+            0,
+            -9.806136326968026
+          ],
+          "clear": true,
+          "gap": 1.567079098732803,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.10957430225744437,
+            0,
+            -9.939830390342445
+          ],
+          "clear": true,
+          "gap": 1.694007927676809,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.0502172087452801,
+            0,
+            -10.053339323994825
+          ],
+          "clear": true,
+          "gap": 1.8046681384588268,
+          "status": "approaching"
+        },
+        {
+          "assistant": [
+            0.0502172087452801,
+            0,
+            -10.053339323994825
+          ],
+          "clear": true,
+          "gap": 1.8046681384588268,
+          "status": "at-player"
+        }
+      ],
+      "final": {
+        "ready": true,
+        "entered": true,
+        "view": "first",
+        "lighting": "day",
+        "tasks": {
+          "talk": false,
+          "light": false,
+          "scan": false
+        },
+        "scanning": false,
+        "mode": "demo",
+        "listening": false,
+        "busy": false,
+        "speaking": false,
+        "voice": {
+          "hasRecognition": false,
+          "hasTTS": false,
+          "handsfree": false,
+          "queuedSpeech": false,
+          "voiceCount": 0,
+          "phase": "idle",
+          "engine": "browser",
+          "localAvailability": "unsupported",
+          "retryAttempt": 0,
+          "recovering": false,
+          "lastError": ""
+        },
+        "player": [
+          -5.551115123125783e-15,
+          -0.005999997258186285,
+          -8.249370000000019
+        ],
+        "playerYaw": 0,
+        "playerPitch": -0.1575079474075775,
+        "assistant": [
+          0.0502172087452801,
+          0,
+          -10.053339323994825
+        ],
+        "follow": {
+          "status": "at-player",
+          "moving": false,
+          "yaw": 6.255000937487444,
+          "distance": 2.4,
+          "speed": 0,
+          "velocity": [
+            0,
+            0,
+            0
+          ],
+          "goal": [
+            -5.551115123125783e-15,
+            -0.005999997258186285,
+            -10.149370000000019
+          ],
+          "waypoints": [],
+          "searches": 24,
+          "cachedCells": 354
+        },
+        "assistantGroundClear": true,
+        "triangles": 533060,
+        "calls": 20,
+        "lod": "near",
+        "distantLoaded": true,
+        "companion": {
+          "active": "Idle_Breathe",
+          "idle": "Idle_Breathe",
+          "mode": "auto",
+          "walkWeight": 0.015514192947475424,
+          "walkPhase": 0.0006933016342964837,
+          "position": [
+            0.0502172087452801,
+            0,
+            -10.053339323994825
+          ],
+          "yaw": 6.255000937487444,
+          "blink": 0,
+          "smile": 0.1250244887328731,
+          "clips": [
+            "Idle_Breathe",
+            "Idle_Glance",
+            "Idle_Relaxed",
+            "Listen_Nod",
+            "Talk_Gesture",
+            "Walk_Backward",
+            "Walk_Forward",
+            "Walk_Left",
+            "Walk_Right",
+            "Hem_Stop",
+            "Hem_Turn_Left",
+            "Hem_Turn_Right"
+          ],
+          "hem": {
+            "active": [
+              "Hem_Stop"
+            ],
+            "last": "Hem_Stop",
+            "counts": {
+              "stop": 4,
+              "turn": 3
+            }
+          },
+          "strideDuration": 0.9999999403953552
+        },
+        "frameMedianMs": 16.69999999999709,
+        "renderScale": 1,
+        "animationTime": 49.28130000000068,
+        "ground": -0.00599999725818634,
+        "colliders": 17,
+        "ceilingVisible": true,
+        "consoleLevels": [
+          "near",
+          "near",
+          "near"
+        ],
+        "farCompanion": {
+          "active": "Idle_Breathe",
+          "idle": "Idle_Breathe",
+          "mode": "auto",
+          "walkWeight": 0.015514192947475424,
+          "walkPhase": 0.0006933016342964837,
+          "position": [
+            0.0502172087452801,
+            0,
+            -10.053339323994825
+          ],
+          "yaw": 6.255000937487444,
+          "blink": 0,
+          "smile": 0.1250244887328731,
+          "clips": [
+            "Idle_Breathe",
+            "Idle_Glance",
+            "Idle_Relaxed",
+            "Listen_Nod",
+            "Talk_Gesture",
+            "Walk_Backward",
+            "Walk_Forward",
+            "Walk_Left",
+            "Walk_Right",
+            "Hem_Stop",
+            "Hem_Turn_Left",
+            "Hem_Turn_Right"
+          ],
+          "hem": {
+            "active": [
+              "Hem_Stop"
+            ],
+            "last": "Hem_Stop",
+            "counts": {
+              "stop": 4,
+              "turn": 3
+            }
+          },
+          "strideDuration": 0.9999999403953552
+        },
+        "framing": {
+          "head": [
+            0.04082139134102732,
+            0.5208538202409791,
+            0.9436269298763028
+          ],
+          "feet": [
+            0.035392144004222865,
+            -1.3442465044689007,
+            0.951191068020224
+          ]
+        }
+      }
+    },
+    "turned": {
+      "ready": true,
+      "entered": true,
+      "view": "first",
+      "lighting": "day",
+      "tasks": {
+        "talk": false,
+        "light": false,
+        "scan": false
+      },
+      "scanning": false,
+      "mode": "demo",
+      "listening": false,
+      "busy": false,
+      "speaking": false,
+      "voice": {
+        "hasRecognition": false,
+        "hasTTS": false,
+        "handsfree": false,
+        "queuedSpeech": false,
+        "voiceCount": 0,
+        "phase": "idle",
+        "engine": "browser",
+        "localAvailability": "unsupported",
+        "retryAttempt": 0,
+        "recovering": false,
+        "lastError": ""
+      },
+      "player": [
+        -5.551115123125783e-15,
+        -0.005999997258186285,
+        -8.249370000000019
+      ],
+      "playerYaw": 3.1399999999999992,
+      "playerPitch": -0.1575079474075775,
+      "assistant": [
+        -0.044001618654150525,
+        0,
+        -5.951731181004652
+      ],
+      "follow": {
+        "status": "at-player",
+        "moving": false,
+        "yaw": 9.40561309612481,
+        "distance": 2.4,
+        "speed": 0,
+        "velocity": [
+          0,
+          0,
+          0
+        ],
+        "goal": [
+          -0.00382236699957607,
+          -0.005999997258186285,
+          -5.849373043853924
+        ],
+        "waypoints": [],
+        "searches": 26,
+        "cachedCells": 391
+      },
+      "assistantGroundClear": true,
+      "triangles": 716790,
+      "calls": 26,
+      "lod": "near",
+      "distantLoaded": true,
+      "companion": {
+        "active": "Idle_Glance",
+        "idle": "Idle_Glance",
+        "mode": "auto",
+        "walkWeight": 0.0005530843701478334,
+        "walkPhase": 0.5854020972911861,
+        "position": [
+          -0.044001618654150525,
+          0,
+          -5.951731181004652
+        ],
+        "yaw": 9.40561309612481,
+        "blink": 0,
+        "smile": 0.27548791482266105,
+        "clips": [
+          "Idle_Breathe",
+          "Idle_Glance",
+          "Idle_Relaxed",
+          "Listen_Nod",
+          "Talk_Gesture",
+          "Walk_Backward",
+          "Walk_Forward",
+          "Walk_Left",
+          "Walk_Right",
+          "Hem_Stop",
+          "Hem_Turn_Left",
+          "Hem_Turn_Right"
+        ],
+        "hem": {
+          "active": [
+            "Hem_Stop"
+          ],
+          "last": "Hem_Stop",
+          "counts": {
+            "stop": 5,
+            "turn": 5
+          }
+        },
+        "strideDuration": 0.9999999403953552
+      },
+      "frameMedianMs": 16.69999999999709,
+      "renderScale": 1,
+      "animationTime": 63.814100000001666,
+      "ground": -0.00599999725818634,
+      "colliders": 17,
+      "ceilingVisible": true,
+      "consoleLevels": [
+        "near",
+        "near",
+        "near"
+      ],
+      "farCompanion": {
+        "active": "Idle_Glance",
+        "idle": "Idle_Glance",
+        "mode": "auto",
+        "walkWeight": 0.0005530843701478334,
+        "walkPhase": 0.5854020972911861,
+        "position": [
+          -0.044001618654150525,
+          0,
+          -5.951731181004652
+        ],
+        "yaw": 9.40561309612481,
+        "blink": 0,
+        "smile": 0.27548791482266105,
+        "clips": [
+          "Idle_Breathe",
+          "Idle_Glance",
+          "Idle_Relaxed",
+          "Listen_Nod",
+          "Talk_Gesture",
+          "Walk_Backward",
+          "Walk_Forward",
+          "Walk_Left",
+          "Walk_Right",
+          "Hem_Stop",
+          "Hem_Turn_Left",
+          "Hem_Turn_Right"
+        ],
+        "hem": {
+          "active": [
+            "Hem_Stop"
+          ],
+          "last": "Hem_Stop",
+          "counts": {
+            "stop": 5,
+            "turn": 5
+          }
+        },
+        "strideDuration": 0.9999999403953552
+      },
+      "framing": {
+        "head": [
+          0.025675342752836484,
+          0.4817251615564462,
+          0.9559725716908091
+        ],
+        "feet": [
+          0.02292230455095788,
+          -1.0177278939618066,
+          0.9607470378610377
+        ]
+      }
+    }
+  },
+  "requests": [
+    {
+      "path": "/hi3d-index.html",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-style.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-settings.css",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-game.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/loaders/GLTFLoader.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/environments/RoomEnvironment.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-dialogue.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-kimi-client.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-voice.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-companion.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three-mesh-bvh/build/index.module.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-lab-details.js",
+      "status": 200
+    },
+    {
+      "path": "/hi3d-follow.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/build/three.module.js",
+      "status": 200
+    },
+    {
+      "path": "/vendor/three/examples/jsm/utils/BufferGeometryUtils.js",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-lab-architecture.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-console-near.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-assistant-natural-near.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-assistant-natural-far.glb",
+      "status": 200
+    },
+    {
+      "path": "/assets/hi3d-console-far.glb",
+      "status": 200
+    },
+    {
+      "path": "/api/session",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "scope": "Final HTML over local HTTP, clean browser cache, remote resources blocked. Real keyboard/mouse and real GLB skinning. Native speech APIs disabled in this headless animation test. No real AI requests or microphone test; existing AI backend processes left untouched."
+}
