@@ -9,7 +9,8 @@ node -e "process.exit(Number(process.versions.node.split('.')[0]) >= 20 ? 0 : 1)
 if errorlevel 1 goto old_node
 if not exist "hi3d-server.mjs" goto missing_files
 if not exist "hi3d-index.html" goto missing_files
-if not exist "assets\hi3d-assistant-near.glb" goto missing_files
+if not exist "assets\hi3d-assistant-natural-near.glb" goto missing_files
+if not exist "assets\hi3d-assistant-natural-far.glb" goto missing_files
 set "PORT=8767"
 echo.
 echo NOVA 游戏正在启动。
